@@ -13,4 +13,7 @@ Usage
 Available fonts:
 ---
 
-Available fonts are listed here: [Available Fonts][https://github.com/AppVentus/PixelArtBundle/Resources/doc/fonts.md]
+Available fonts are listed here: [Available Fonts][0]
+
+
+[0]:  https://github.com/AppVentus/PixelArtBundle/blob/master/Resources/doc/fonts.md
