@@ -1,0 +1,20 @@
+{
+    "name": "appventus/pixel-art-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfony PixelArt",
+    "keywords": ["pixelart", "twig"],
+    "homepage": "http://appventus.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Paul Andrieux",
+            "email": "paul@appventus.com",
+            "homepage": "http://appventus.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": { "AppVentus\\PixelArtBundle": "" }
+    },
+    "target-dir": "AppVentus/PixelArtBundle",
+    "minimum-stability": "dev"
+}
