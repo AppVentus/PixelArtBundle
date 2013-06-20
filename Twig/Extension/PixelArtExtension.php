@@ -19,7 +19,7 @@ class PixelArtExtension extends \Twig_Extension
             $fonts = $this->getFonts();
             $font = $fonts[array_rand($fonts)];
         }
-        exec(__DIR__."/../../bin/figlet -f ".$font." ".$text, $art);
+        exec(__DIR__."/../../bin/figlet -w 400 -f ".$font." ".$text, $art);
         if ($html) {
             $art = str_replace(" ", "&nbsp;", $art);
             $art = "<div data-font='".$font."' style='font-family:monospace;'>".implode("<br>", $art)."</div>";
@@ -34,9 +34,9 @@ class PixelArtExtension extends \Twig_Extension
         $arts = "";
         foreach ($fonts as $font) {
             $art = array();
-            exec(__DIR__."/../../bin/figlet -f ".$font." ".$text, $art);
+            exec(__DIR__."/../../bin/figlet -w 400 -f ".$font." ".$text, $art);
             $art = str_replace(" ", "&nbsp;", $art);
-            $arts .= "<p>".$font."</p><div data-font='".$font."' style='font-family:monospace;'>".implode("<br>", $art)."</div><br>";
+            $arts .= "<p>".$font."</p><div data-font='".$font."' style='font-family:monospace;'>&nbsp;&nbsp;&nbsp;&nbsp;".implode("<br>&nbsp;&nbsp;&nbsp;&nbsp;", $art)."</div><br>";
         }
 
         return $arts;
